@@ -8,6 +8,7 @@ DJANGO_APPS = [
 ]
 
 LOCAL_APPS = [
+    'apps.user'
     'apps.base',
 ]
 
