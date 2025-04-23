@@ -1,5 +1,6 @@
 from collections import OrderedDict
 
+
 class Gender:
     MALE = "male"
     FEMALE = "female"
