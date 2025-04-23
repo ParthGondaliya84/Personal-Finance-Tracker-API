@@ -12,4 +12,4 @@ class CategoryType:
 
     @classmethod
     def choice(cls):
-        return cls.FileStr.items()
+        return list(cls.FileStr.items())
