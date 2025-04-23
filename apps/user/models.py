@@ -30,7 +30,7 @@ class PFTUser(AbstractUser):
     def __str__(self):
         return self.email
 
-    class MEta:
+    class Meta:
         db_table = "pft_user"
         verbose_name = "PFT user"
         verbose_name_plural = "PFT users"
@@ -53,3 +53,8 @@ class UserProfile(BaseModel):
 
     def __str__(self):
         return self.user.email
+
+    class Meta:
+        db_table = "profile"
+        verbose_name = "User profile"
+        verbose_name_plural = "User profiles"

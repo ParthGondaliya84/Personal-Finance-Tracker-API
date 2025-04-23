@@ -21,4 +21,3 @@ PFT_DB_USER = env.str('PFT_DB_USER')
 PFT_DB_PASSWORD = env.str('PFT_DB_PASSWORD')
 PFT_DB_HOST = env.str('PFT_DB_HOST')
 PFT_DB_PORT = env.int('PFT_DB_PORT', default=5432)
-
