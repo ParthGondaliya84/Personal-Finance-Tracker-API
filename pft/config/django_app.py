@@ -10,6 +10,7 @@ DJANGO_APPS = [
 LOCAL_APPS = [
     'apps.user',
     'apps.base',
+    'apps.category',
 ]
 
 THIRD_PARTY_APPS = [
