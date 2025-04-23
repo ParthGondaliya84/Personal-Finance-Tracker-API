@@ -11,6 +11,7 @@ LOCAL_APPS = [
     'apps.user',
     'apps.base',
     'apps.category',
+    'apps.transaction',
 ]
 
 THIRD_PARTY_APPS = [
