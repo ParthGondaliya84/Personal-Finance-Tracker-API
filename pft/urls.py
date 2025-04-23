@@ -15,9 +15,18 @@ urlpatterns = [
 
 if settings.DEBUG:
     urlpatterns += [
-        path('', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
+        path(
+            '', SpectacularSwaggerView.as_view(url_name='schema'),
+            name='swagger-ui'
+        ),
         path('schema', SpectacularAPIView.as_view(), name='schema'),
-        path('redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
+        path(
+            'redoc/', SpectacularRedocView.as_view(url_name='schema'),
+            name='redoc'
+        ),
+
     ]
 
-    urlpatterns += static(settings.MEDIA_URL, doccument_root=settings.MEDIA_ROOT)
+    urlpatterns += static(
+        settings.MEDIA_URL, doccument_root=settings.MEDIA_ROOT
+    )

@@ -5,7 +5,7 @@ SPECTACULAR_SETTINGS = {
 
     'LICENSE': {
         'name': 'All rights reserved.',
-        
+
     },
     'COMPONENT_SPLIT_REQUEST': True,
 }
