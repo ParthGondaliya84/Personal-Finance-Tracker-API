@@ -1,5 +1,6 @@
 from django.contrib.auth.models import BaseUserManager
 
+
 class PFTUserManager(BaseUserManager):
     def create_user(self, email, password=None, **exatra_fields):
 
