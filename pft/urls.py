@@ -11,6 +11,7 @@ from drf_spectacular.views import (
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('user/', include('apps.user.urls')),
+    path('finance/', include('apps.category.urls')),
 ]
 
 if settings.DEBUG:
