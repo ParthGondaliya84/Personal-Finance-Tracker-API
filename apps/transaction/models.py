@@ -6,7 +6,7 @@ from apps.category.constant import CategoryType
 
 class Transaction(BaseModel):
     amount = models.DecimalField(max_digits=10, decimal_places=2)
-    category = models.ForeignKey(
+    category = models.OneToOneField(
         Category, on_delete=models.SET_NULL, null=True
     )
     note = models.TextField(null=True, blank=True)
