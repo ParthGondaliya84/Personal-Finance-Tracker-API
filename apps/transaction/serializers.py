@@ -50,4 +50,9 @@ class TransactionSerializer(BaseSerializer):
             raise serializers.ValidationError(
                 "A transaction with this category already exists."
             )
+        if value.created_by != self.context['request'].user:
+            raise serializers.ValidationError(
+                "You cannot use a category from another user."
+            )
+
         return value
