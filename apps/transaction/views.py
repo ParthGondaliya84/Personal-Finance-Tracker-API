@@ -1,4 +1,4 @@
-from rest_framework import viewsets, status
+from rest_framework import viewsets
 from apps.base.views import BaseViewSet
 from apps.transaction.models import Transaction
 from apps.transaction.serializers import TransactionSerializer
