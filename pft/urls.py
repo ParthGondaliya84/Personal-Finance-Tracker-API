@@ -13,6 +13,7 @@ urlpatterns = [
     path('auth/', include('apps.user.urls')),
     path('finance/', include('apps.category.urls')),
     path('finance/', include('apps.transaction.urls')),
+    path('manage/', include('apps.budget.urls')),
 ]
 
 if settings.DEBUG:
