@@ -9,7 +9,6 @@ class TransactionFilter(django_filters.FilterSet):
         method="transaction_type_filter"
     )
 
-
     def transaction_type_filter(self, queryset, name, value):
         return queryset.filter(transaction_type__in=value)
 
