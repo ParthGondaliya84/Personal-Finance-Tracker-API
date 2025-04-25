@@ -49,3 +49,11 @@ class BudgetSerializer(BaseSerializer):
             })
 
         return data
+
+    def validate_category(self, category):
+        if category.created_by != self.context['request'].user:
+            raise serializers.ValidationError(
+                "You cannot use a category from another user."
+            )
+
+        return category
