@@ -10,8 +10,9 @@ from drf_spectacular.views import (
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('user/', include('apps.user.urls')),
+    path('auth/', include('apps.user.urls')),
     path('finance/', include('apps.category.urls')),
+    path('finance/', include('apps.transaction.urls')),
 ]
 
 if settings.DEBUG:
